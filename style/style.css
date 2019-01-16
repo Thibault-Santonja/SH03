@@ -168,7 +168,7 @@ a:hover {font-weight: bold}
 }
 
 .separator {
-	background-color: coral;
+	background-color: var(--eggshell);
 	height: 1px;
 	border: 20px 0 20px 0px;
 }
@@ -182,8 +182,9 @@ a:hover {font-weight: bold}
 	margin:auto;
 	width: 30%;
 }
+/*.notif + a > .notif {border-top: 1px solid var(--eggshell)}*/
 .news {background-color: coral}
-
+.news + .separator + a .news {border-top: 1px solid var(--eggshell)}
 
 /* analyse*/
 article {
@@ -224,6 +225,8 @@ nav li:hover {
 	background-color: var(--coral);
 	font-weight: bold;
 }
+
+nav li + li {border-left: 1px solid var(--eggshell)}
 
 /* index */
 
