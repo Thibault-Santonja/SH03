@@ -72,6 +72,7 @@ table {
 
 /* base de la page -----------------------------------------------------------------------------------------------------------------------------------*/
 
+body {background-color: var(--navy-blue)}
 
 iframe {
 	width: 100%;
@@ -79,18 +80,21 @@ iframe {
 	padding: 30px 0 30px 0;
 	background-color: var(--leather)
 }
+
 p {
 	text-align: justify;
 	color: var(--eggshell);
 }
+
 main {
 	width: 100%;
-	background-color: var(--navy-blue);
 	margin: auto;
 }
+
 div {
 	vertical-align: top;
 }
+
 header {
 	font: 'title'
 }
