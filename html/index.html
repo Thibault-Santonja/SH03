@@ -17,29 +17,55 @@
 </header>
 
 <main>
-	<div id="index">
-		<article>
-			<h1>Bienvenue</h1>
-			<h2>Qu'est-ce que l'analyseur de défauts ?</h2>
-			<p>Cette API a pour vocation d'aider les opérateurs chargés de maintenance dans l'usine 4.0.</p>
-			<p>Vous trouverez ici 3 onglets : Home, Analyses, et Notifications. Le premier onglet, dans lequel vous êtes, vous décrit le fonctionnement du site. Dans le 2ème vous trouverez toutes les analyses précédement effectuées. Enfin le 3ème vous alertera en cas de demande de validation de défaut ou lorsqu'une analyse est terminée.</p>
-			<p><br><br><br><br>!!! TODO !!! : <br>Retirer le "premier onglet" et le mettre au dessus des trois autres.<br><br> </p>
-		</article>
+    <div id="index">
+        <article>
+            <h1>Bienvenue</h1>
+            <h2>Qu'est-ce que l'analyseur de défauts ?</h2>
+            <p>Cette API a pour vocation d'aider les opérateurs chargés de maintenance dans l'usine 4.0.</p>
+            <p>Vous trouverez ici 3 onglets : Home, Analyses, et Notifications. Le premier onglet, dans lequel vous êtes, vous décrit le fonctionnement du site. Dans le 2ème vous trouverez toutes les analyses précédement effectuées. Enfin le 3ème vous alertera en cas de demande de validation de défaut ou lorsqu'une analyse est terminée.</p>
+        </article>
 
-		<div class="separator"></div>
+        <div class="separator"></div>
+        <article>
+            <h1>Demandes de validation de défauts</h1>
+            <h2>Pourquoi ?</h2>
+            <p>L'intelligence artificielle (IA) qui analyse les défauts sur l'appareil en maintenance à parfois des doutes sur certaines zones de l'appareil. Un opérateur est alors nécéssité pour confirmer ou infirmer la présence de défaut.</p>
 
-		<article>
-			<h1>Demandes de validation de défauts</h1>
-			<h2>Pourquoi ?</h2>
-			<p>L'intelligence artificielle (IA) qui analyse les défauts sur l'appareil en maintenance à parfois des doutes sur certaines zones de l'appareil. Un opérateur est alors nécéssité pour confirmer ou infirmer la présence de défaut.</p>
+            <h2>Comment ?</h2>
+            <p>Une notification apparaitra dans l'onglet dédié. Vous aurez alors une photo du défaut rencontré, une représentation de la maquette à l'endroit du défaut, et 3 boutons : "Confirmer", "Refuser" ou "Mauvaise analyse"</p>
+            <p><br>Confirmer : l'image de l'appareil contient bien un défaut, correctement identifié par l'IA.</p>
+            <p><br>Refuser : l'image ne montre pas de défaut. </p>
+            <p><br>Mauvaise analyse : il y a bien un ou des défauts, mais mal localisés.</p>
+        </article>
 
-			<h2>Comment ?</h2>
-			<p>Une notification apparaitra dans l'onglet dédié. Vous aurez alors une photo du défaut rencontré, une représentation de la maquette à l'endroit du défaut, et 3 boutons : "Confirmer", "Refuser" ou "Mauvaise analyse"</p>
-			<p><br>Confirmer : l'image de l'appareil contient bien un défaut, correctement identifié par l'IA.</p>
-			<p><br>Refuser : l'image ne montre pas de défaut. </p>
-			<p><br>Mauvaise analyse : il y a bien un ou des défauts, mais mal localisés.</p>
-		</article>
-	</div>
+        <div class="separator"></div>
+
+        <article>
+            <h1>Rapport d'analyse</h1>
+            <h2>Première page</h2>
+            <p>Un rapport est automatiquement généré à partir de DamageFolio après chaque analyse. Sur la première page vous trouverez un résumé général de la maintenance de l'appareil. Il montre le nombre de défauts "A surveiller", "A analyser", "A réparer" et "A changer" (premier tableau). Il indique aussi le temps de maintenance avant de pouvoir délivrer le certificat de vol et le coût total des pièces et du personnel. Deux maquettes suivent : un modèle parfait et un modèle sur lequel les parties défectueuses sont surlignées.</p>
+
+            <h2>Détail de chaque défaut</h2>
+            <p>Pour chaque défaut les données fournies par DamageFolio sont rapportées : criticité, action a réaliser, et une estimation de coût et de temps. Un schéma est ajouté avec sa localisation précise sur la maquette numérique.</p>
+        </article>
+    </div>
 </main>
+
+<footer>
+	<ul>
+		<li class="footerli"><ul>
+			<li>Louis Bal dit Sollier</li>
+			<li>Louis Fillière</li>
+			<li>Amaury Fouquet-Lapar</li>
+			<li>Yaya Ly</li>
+			<li>Thibault Santonja</li>
+		</ul></li
+		><li class="footerli">
+			<img src="../img/soprasterialogo.jpg"></li
+		><li class="footerli">
+			<img src="../img/utclogo.jpg">
+		</li>
+	</ul>
+</footer>
 </body>
 </html>

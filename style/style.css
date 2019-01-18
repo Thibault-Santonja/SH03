@@ -281,3 +281,39 @@ article img {
 .menu-pic-defaut img + img {padding-top: 5%}
 .menu-pic-defaut img:first-child {padding-top: 2%}
 .menu-pic-defaut img:last-child {padding-bottom: 2%}
+
+
+
+
+/* ----- foooter */
+
+footer {
+	color: red;
+	background-color: var(--eggshell);
+}
+footer ul {
+	display: flex;
+	justify-content: space-around;
+}
+footer li {
+	color: var(--navy-blue);
+}
+footer img {
+	max-width: 50%
+}
+.footerli {
+	display: inline-block;
+	width: 30%;
+	text-align: center;
+	list-style-type: none;
+}
+.footerli ul {display: block}
+.footerli li {
+	list-style-type: none;
+	font-size: 10px;
+}
+.footerli img {
+	text-align: center;
+	vertical-align: middle;
+}
+.footerli + .footerli {border-left: 1px solid var(--navy-blue)}
