@@ -84,7 +84,14 @@ iframe {
 p {
 	text-align: justify;
 	color: var(--eggshell);
+	text-indent: 2em;
 }
+p + p {padding-top: 8px}
+p + h1 {padding-top: 30px}
+p + h2 {padding-top: 20px}
+p + h3 {padding-top: 15px}
+p + h4 {padding-top: 15px}
+p + h5 {padding-top: 15px}
 
 main {
 	width: 100%;
@@ -250,6 +257,11 @@ article img {
 	display: flex;
 	justify-content: space-around;
 }
+.img-div-defaut img {
+	width:99%;
+	border: 2px solid var(--navy-blue)
+}
+.img-div-defaut img:hover {border: 2px solid var(--coral)}
 .menu-pic-defaut {
 	width: 30%;
 	display: flex;
@@ -260,7 +272,6 @@ article img {
 	display: inline-block;
 	height: 100%;
 }
-.localisation, .model, .imgdefaut {width: 100%}
 .pic-defaut img {
 	display: block;
 }
