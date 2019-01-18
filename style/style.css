@@ -133,7 +133,15 @@ a:hover {font-weight: bold}
 
 
 /* nav */
-.navigation {border-width: 0px}
+header {
+	display: flex;
+	justify-content: space-around;
+	background-color: var(--eggshell);
+}
+.navigation {
+	border-width: 0px;
+	width: 95%;
+}
 .navigation li {
 	display:inline-block;
 	margin:auto;
@@ -186,24 +194,6 @@ a:hover {font-weight: bold}
 .news {background-color: coral}
 .news + .separator + a .news {border-top: 1px solid var(--eggshell)}
 
-/* analyse*/
-article {
-	margin: auto;
-	padding: 0% 20% 0% 20%;
-}
-
-article img {
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%;
-  height: 100%;
-}
-
-.image {
-	width: 100%;
-	height: 100%;
-}
 
 nav {border-width: 0px}
 nav li {
@@ -237,3 +227,48 @@ nav li + li {border-left: 1px solid var(--eggshell)}
 #index article {padding: 35px 0% 35px 0px}
 #index article a {color: var(--coral)}
 #index article a:hover {color: var(--eggshell)}
+
+
+
+/* analyse*/
+article {
+	margin: auto;
+	padding: 0% 20% 0% 20%;
+	justify-content: center;
+}
+
+article img {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+}
+
+.img-div-defaut {
+	width: 99%;
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+	border: 1px solid red ;	
+}
+.menu-pic-defaut {
+	width: 30%;
+	display: flex;
+	justify-content: space-around;
+	height: 100%;
+}
+.pic-defaut {
+	display: inline-block;
+	height: 100%;
+border: 1px solid red ;
+}
+.localisation, .model, .imgdefaut {width: 100%}
+.pic-defaut img {
+	display: block;
+}
+.pic-defaut:nth-child(1) {width: 64%}
+.pic-defaut:nth-child(2) {width: 32%}
+
+.menu-pic-defaut img + img {padding-top: 5%}
+.menu-pic-defaut img:first-child {padding-top: 2%}
+.menu-pic-defaut img:last-child {padding-bottom: 2%}
